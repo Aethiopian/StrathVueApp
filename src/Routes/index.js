@@ -5,6 +5,8 @@ import Events from "./../components/Events.vue"
 import Coursesoffered from "./../components/Coursesoffered.vue"
 import Partnerships from "./../components/ContactUs.vue"
 import Alumnipage from "./../components/Alumnipage.vue"
+import Library from "./../components/Library.vue"
+import AboutUs from "./../components/AboutUs.vue"
 
 const routes = [
     {
@@ -14,52 +16,49 @@ const routes = [
     },
 
     {
-        path: '/',
+        path: '/aboutus',
         name: 'About Us',
-        component: Homepage,
+        component: AboutUs,
     },
 
     {
-        path: '/Library',
+        path: '/library',
         name: 'Library',
-        component: Homepage,
+        component: Library,
     },
 
 
     {
-        path: '/Events',
+        path: '/events',
         name: 'events',
         component: Events,
     },
 
 
     {
-        path: '/Coursesoffered',
+        path: '/coursesoffered',
         name: 'Coursesoffered',
         component: Coursesoffered,
     },
 
 
     {
-        path: '/Alumnipage',
+        path: '/alumnipage',
         name: 'Alumnipage',
         component: Alumnipage,
     },
 
 
     {
-        path: '/Partnerships',
+        path: '/partnerships',
         name: 'Partnerships',
         component: Partnerships,
-    }
-]
-    
-
-
+    },
+];
 
 const router = createRouter ({
     history: createWebHistory(),
     routes,
-},
-)
+});
+
 export default router
